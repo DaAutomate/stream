@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  streamlit:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_ENABLE_CORS=false
+      - STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION=true
+      - STREAMLIT_SERVER_COOKIE_SECRET=my_secret_cookie
+
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - streamlit

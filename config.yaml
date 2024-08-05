@@ -1,0 +1,31 @@
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    cesarzdarek:
+      email: cesarzdarek@gmail.com
+      failed_login_attempts: 0
+      logged_in: false
+      name: Cesarz Darek
+      password: $2b$12$3vU46YAm0R.OFaJeLfMsZOAQuPZRoJ3/8C/gQFYxlZMHayw7mDRTG
+pre-authorized:
+  emails:
+    - cesarzdarek@gmail.com
+    - alicja.panko@takaoto.pro
+    - alicja.slowik@takaoto.pro
+    - bartosz.politowski@takaoto.pro
+    - dariusz.cesarz@takaoto.pro
+    - ewelina.gawliczek@takaoto.pro
+    - jacek.zmudzinski@takaoto.pro
+    - kolbusz@takaoto.pro
+    - kamila.kuczynska@takaoto.pro
+    - krzysztof.skubacz@takaoto.pro
+    - krzysztof.swoboda@takaoto.pro
+    - maksymilian.cwiek@takaoto.pro
+    - mateusz.ryszka@takaoto.pro
+    - mikolaj.kolbusz@takaoto.pro
+    - paulina.semik@takaoto.pro
+    - ramona.smieszek@takaoto.pro
+    - slowik@takaoto.pro
