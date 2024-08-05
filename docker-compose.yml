@@ -11,10 +11,8 @@ services:
       - STREAMLIT_SERVER_ENABLE_CORS=false
       - STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION=true
       - STREAMLIT_SERVER_COOKIE_SECRET=my_secret_cookie
-
-  nginx:
-    build: ./nginx
-    ports:
-      - "80:80"
-    depends_on:
-      - streamlit
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8501/_stcore/health"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
